@@ -85,8 +85,7 @@ module.exports = {
       apply: compiler => {
         compiler.hooks.afterEmit.tap('AfterEmitPlugin', compilation => {
           require('child_process').exec(
-            'cp ~/react/packages/react-devtools-core/dist/* ~/rn-test/AwesomeProject/node_modules/react-devtools-core/dist/ ' +
-              ' && cd ~/rn-test/AwesomeProject/ && npx react-native run-ios',
+            'cp ~/react/packages/react-devtools-core/dist/* ~/rn-test/DapperApp/node_modules/react-devtools-core/dist/ ',
             (err, stdout, stderr) => {
               process.stdout.write('DONE');
               process.stderr.write('DONE');

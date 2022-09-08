@@ -28,7 +28,7 @@ export default function ComponentSearchInput(props: Props) {
     <SearchInput
       goToNextResult={goToNextResult}
       goToPreviousResult={goToPreviousResult}
-      placeholder="Search (text or /regex/)"
+      placeholder="Search (text or /regex/) poop"
       search={search}
       searchIndex={searchIndex}
       searchResultsCount={searchResults.length}
