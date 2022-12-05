@@ -364,10 +364,9 @@ const DispatcherProxyHandler = {
 
 // `Proxy` may not exist on some platforms
 const DispatcherProxy =
-  // typeof Proxy === 'undefined'
-  //   ? Dispatcher
-  //   : new Proxy(Dispatcher, DispatcherProxyHandler);
-  Dispatcher;
+  typeof Proxy === 'undefined'
+    ? Dispatcher
+    : new Proxy(Dispatcher, DispatcherProxyHandler);
 
 // Inspect
 
